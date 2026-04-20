@@ -394,13 +394,16 @@ python backend/agents/agent3/main.py
 API Docs:  http://localhost:8000/docs
 Frontend:  http://localhost:3000
 ```
-
+#### **Alternative **
+```
+Just execute run_system.bat
+```
 ---
 
 ## 📂 Project Structure
 
 ```
-Agentic-AI-Farm-Intelligence-System/
+AI-Farm-Intelligence-System/
 ├── backend/
 │   ├── agents/
 │   │   ├── agent1/                    # Data Ingestion Agent
@@ -456,6 +459,9 @@ Agentic-AI-Farm-Intelligence-System/
 ├── .gitignore
 ├── README.md                          # This file
 └── requirements.txt                   # All dependencies
+└──run_system.bat
+
+
 ```
 
 ---
