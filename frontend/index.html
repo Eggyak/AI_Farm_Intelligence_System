@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AFO: Orchestration – Agricultural Intelligence Hub</title>
+  <link rel="stylesheet" href="index.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- CHATBOT POPUP -->
+<div class="chatbot-popup hidden" id="chatbotPopup">
+  <div class="chatbot-header">
+    <div class="chatbot-header-title">
+      <span class="chatbot-star-icon">✦</span>
+      <span>NEURAL ASSISTANT</span>
+    </div>
+    <button class="chatbot-x-btn" id="chatbotClose" title="Close">✕</button>
+  </div>
+  <div class="chatbot-body" id="chatMessages">
+    <div class="chat-msg-row bot-row">
+      <div class="chat-avatar bot-av"></div>
+      <div class="chat-bubble bot-bubble">How can I assist with field telemetry today?</div>
+    </div>
+  </div>
+  <div class="chatbot-footer">
+    <input type="text" class="chat-text-input" id="chatInput" placeholder="Type a command…" autocomplete="off"/>
+    <button class="chat-send-btn" id="chatSend">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="22" y1="2" x2="11" y2="13"/>
+        <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+      </svg>
+    </button>
+  </div>
+</div>
+
+<!-- TOP NAV -->
+<header class="topnav">
+  <div class="topnav-left">
+    <span class="brand">AFO: Orchestration</span>
+    <nav class="top-tabs">
+      <a href="#" class="tab active">Fleet</a>
+      <a href="dashboard2.html" class="tab">Orchestration</a>
+      <a href="#" class="tab">Analytics</a>
+    </nav>
+  </div>
+  <div class="topnav-right">
+    <button class="btn-outline">Export PDF</button>
+    <button class="btn-filled">Export JSON</button>
+    <span class="icon-btn">🔔</span>
+    <span class="icon-btn">⚙️</span>
+    <span class="avatar">👤</span>
+  </div>
+</header>
+
+<div class="layout">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-brand">
+      <div class="brand-dot"></div>
+      <div>
+        <div class="brand-name">Verdant Intelligence</div>
+        <div class="brand-sub">AUTONOMOUS AGENT SYNC:<br/><span class="active-tag">ACTIVE</span></div>
+      </div>
+    </div>
+    <button class="chatbot-open-btn" id="openChatbotBtn">💬 Open Chatbot</button>
+    <nav class="sidebar-nav">
+      <a href="#" class="nav-item active"><span class="nav-icon">📡</span> Data Collection</a>
+      <a href="#" class="nav-item"><span class="nav-icon">📊</span> Analysis</a>
+      <a href="#" class="nav-item"><span class="nav-icon">🎯</span> Decision</a>
+      <a href="#" class="nav-item"><span class="nav-icon">👁️</span> Monitoring</a>
+      <a href="#" class="nav-item"><span class="nav-icon">💾</span> Memory</a>
+    </nav>
+    <div class="sidebar-bottom">
+      <a href="#" class="nav-item"><span class="nav-icon">📋</span> System Logs</a>
+      <a href="#" class="nav-item"><span class="nav-icon">❓</span> Help</a>
+    </div>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="main">
+
+    <!-- PAGE HEADER -->
+    <div class="page-header">
+      <div class="page-header-left">
+        <div class="page-eyebrow">REAL-TIME ORCHESTRATION</div>
+        <h1 class="page-title">Agricultural Intelligence Hub</h1>
+        <p class="page-desc">Synchronizing autonomous agents across regional crop clusters to maximize yield through precise data telemetry.</p>
+      </div>
+      <div class="system-health-badge">
+        <div>
+          <div class="sh-label">SYSTEM HEALTH</div>
+          <div class="sh-value">98.4% Nominal</div>
+        </div>
+        <div class="sh-icon">⚡</div>
+      </div>
+    </div>
+
+    <!-- AGENTS ROW 1 -->
+    <div class="agents-row">
+
+      <!-- Agent 1 -->
+      <div class="card agent-wide">
+        <div class="card-header-row">
+          <div class="card-title"><span class="card-icon">📡</span> Agent 1: Data Collection Engine</div>
+          <span class="badge-active">ACTIVE CAPTURE</span>
+        </div>
+        <div class="agent1-grid">
+          <div class="sliders-col">
+            <div class="slider-row">
+              <span class="slider-label">Soil Moisture</span>
+              <input type="range" min="0" max="100" value="42" class="slider" id="soilSlider"/>
+              <span class="slider-val" id="soilVal">42%</span>
+            </div>
+            <div class="slider-row">
+              <span class="slider-label">Temp</span>
+              <input type="range" min="0" max="60" value="28" class="slider" id="tempSlider"/>
+              <span class="slider-val" id="tempVal">28°C</span>
+            </div>
+            <div class="slider-row">
+              <span class="slider-label">Humidity</span>
+              <input type="range" min="0" max="100" value="65" class="slider" id="humidSlider"/>
+              <span class="slider-val" id="humidVal">65%</span>
+            </div>
+          </div>
+          <div class="selects-col">
+            <div class="select-group">
+              <label class="select-label">CROP TYPE</label>
+              <!-- id added so JS can read this value reliably -->
+              <select class="custom-select" id="agent1-crop-select">
+                <option>Rice</option><option>Wheat</option><option>Cotton</option>
+              </select>
+            </div>
+            <div class="select-group">
+              <label class="select-label">REGION</label>
+              <select class="custom-select" id="agent1-region-select">
+                <option>Punjab North</option><option>Punjab South</option><option>Haryana</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Agent 2 -->
+      <div class="card agent-narrow">
+        <div class="card-title"><span class="card-icon">📈</span> Agent 2: Analysis</div>
+        <div class="field-row">
+          <span class="field-label">Sensitivity</span>
+          <span class="field-val high">HIGH</span>
+        </div>
+        <input type="range" min="0" max="100" value="90" class="green-slider"/>
+        <div class="field-row mt8"><span class="field-label">ANALYSIS TYPE</span></div>
+        <select class="custom-select">
+          <option>Predictive Pest Growth</option><option>Yield Estimation</option>
+        </select>
+        <div class="risk-box">
+          <div class="risk-label">RISK SCORE</div>
+          <div class="risk-value">3.4</div>
+          <div class="risk-bar-wrap"><div class="risk-bar" style="width:34%"></div></div>
+          <div class="risk-warn">⚠️ WARNING: MILD NITROGEN DEFICIT</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- AGENTS ROW 2 -->
+    <div class="agents-row agents-row2">
+
+      <!-- Agent 3 -->
+      <div class="card agent-decision">
+        <div class="card-title"><span class="card-icon">⚙️</span> Agent 3: Decision Engine</div>
+        <div class="strategy-row">
+          <div>
+            <div class="field-label mb4">STRATEGY SELECTOR</div>
+            <div class="strategy-list">
+              <button class="strategy-btn active">Optimize Resources</button>
+              <button class="strategy-btn">High Yield Focus</button>
+              <button class="strategy-btn">Sustainable Loop</button>
+            </div>
+          </div>
+          <div class="budget-col">
+            <div class="budget-row">
+              <span class="field-label">Budget</span>
+              <span class="budget-val">₹24,500</span>
+            </div>
+            <input type="range" min="0" max="50000" value="24500" class="green-slider"/>
+            <div class="budget-row mt8">
+              <span class="field-label">Water Limit</span>
+              <span class="budget-val">12.5k L</span>
+            </div>
+            <input type="range" min="0" max="25000" value="12500" class="green-slider"/>
+          </div>
+        </div>
+      </div>
+
+      <!-- Agent 4 -->
+      <div class="card agent-monitor">
+        <div class="card-title"><span class="card-icon">👁️</span> Agent 4: Monitoring</div>
+        <div class="field-row">
+          <span class="field-label">Alert Level</span>
+          <span class="field-val">Standard</span>
+        </div>
+        <input type="range" min="0" max="100" value="50" class="green-slider"/>
+        <div class="toggle-row">
+          <span class="field-label">Real-time Toggle<br/><span class="toggle-sub">Stream telemetry active</span></span>
+          <label class="toggle">
+            <input type="checkbox" checked/>
+            <span class="toggle-slider"></span>
+          </label>
+        </div>
+        <div class="sparkline-box">
+          <canvas id="monitorChart" width="160" height="55"></canvas>
+        </div>
+      </div>
+
+      <!-- Agent 5 -->
+      <div class="card agent-memory">
+        <div class="card-title"><span class="card-icon">💾</span> Agent 5: Memory</div>
+        <div class="field-row">
+          <span class="field-label">Learning Rate</span>
+          <span class="field-val">0.004</span>
+        </div>
+        <input type="range" min="0" max="100" value="15" class="green-slider"/>
+        <div class="toggle-row mt8">
+          <span class="field-label">History Archive<br/><span class="toggle-sub">Retain last 12 seasons</span></span>
+          <label class="toggle">
+            <input type="checkbox" checked/>
+            <span class="toggle-slider"></span>
+          </label>
+        </div>
+        <div class="memory-quote">
+          "Optimal harvest date from Season 22 recalibrated for current soil moisture anomalies."
+        </div>
+      </div>
+
+    </div>
+
+    <!-- BOTTOM ROW -->
+    <div class="bottom-row">
+      <div class="card hist-card">
+        <div class="card-header-row">
+          <span class="card-title">Historical Risk Analysis</span>
+          <div class="legend">
+            <span class="leg-dot predicted"></span> PREDICTED
+            <span class="leg-dot actual"></span> ACTUAL
+          </div>
+        </div>
+        <canvas id="histChart" width="480" height="130"></canvas>
+      </div>
+      <div class="card yield-card">
+        <div class="yield-label">EXPECTED YIELD DELTA</div>
+        <div class="yield-value">+18.4%</div>
+        <div class="yield-metrics">
+          <div class="yield-metric-row">
+            <span>Water Efficiency</span><span>92%</span>
+          </div>
+          <div class="yield-metric-bar"><div class="ymb-fill" style="width:92%"></div></div>
+          <div class="yield-metric-row mt8">
+            <span>Agent Consensus</span><span class="high">High</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════
+         RUN AI PIPELINE
+    ═══════════════════════════════════════ -->
+    <div class="pipeline-section">
+      <div class="pipeline-section-header">
+        <div>
+          <div class="pipeline-section-title">🚀 AI Pipeline Execution</div>
+          <div class="pipeline-section-sub">Runs all 5 agents in sequence and produces a unified field recommendation</div>
+        </div>
+        <div class="pipeline-btn-wrap">
+          <button class="btn-pipeline" id="runPipelineBtn">🚀 Run AI Pipeline</button>
+          <div class="pipeline-status-text" id="pipelineStatus"></div>
+        </div>
+      </div>
+
+      <!-- Step progress bar -->
+      <div class="pipeline-steps" id="pipelineSteps">
+        <div class="pipeline-step" id="step1">
+          <div class="step-dot">1</div>
+          <div class="step-label">Data<br/>Collection</div>
+        </div>
+        <div class="pipeline-step" id="step2">
+          <div class="step-dot">2</div>
+          <div class="step-label">Analysis</div>
+        </div>
+        <div class="pipeline-step" id="step3">
+          <div class="step-dot">3</div>
+          <div class="step-label">Decision</div>
+        </div>
+        <div class="pipeline-step" id="step4">
+          <div class="step-dot">4</div>
+          <div class="step-label">Monitoring</div>
+        </div>
+        <div class="pipeline-step" id="step5">
+          <div class="step-dot">5</div>
+          <div class="step-label">Memory</div>
+        </div>
+      </div>
+
+      <!-- Result panel -->
+      <div class="pipeline-result" id="pipelineResult">
+        <div class="result-title">✦ Pipeline Execution Complete — All Agents Synced</div>
+        <div class="result-grid">
+          <div class="result-item">
+            <div class="ri-label">Soil Moisture Status</div>
+            <div class="ri-val" id="res-soil">—</div>
+          </div>
+          <div class="result-item">
+            <div class="ri-label">Risk Assessment</div>
+            <div class="ri-val" id="res-risk">Score 3.4 · N-Deficit</div>
+          </div>
+          <div class="result-item">
+            <div class="ri-label">Recommended Action</div>
+            <div class="ri-val" id="res-action">—</div>
+          </div>
+          <div class="result-item">
+            <div class="ri-label">Expected Yield Delta</div>
+            <div class="ri-val positive">+18.4% above baseline</div>
+          </div>
+          <div class="result-item">
+            <div class="ri-label">Water Efficiency</div>
+            <div class="ri-val positive">92% — Optimal</div>
+          </div>
+          <div class="result-item">
+            <div class="ri-label">Memory Sync</div>
+            <div class="ri-val" id="res-memory">Season 22 applied ✓</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
