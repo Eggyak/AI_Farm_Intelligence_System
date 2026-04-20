@@ -1,0 +1,450 @@
+[
+  {
+    "timestamp": "2026-04-10T19:24:24.116483",
+    "run": {
+      "strategy": "risk_avoid",
+      "risk_score": 2,
+      "plan": {
+        "field_id": "field_1",
+        "actions": [
+          {
+            "type": "scouting",
+            "cost_inr": 300.0,
+            "water_liters": 0.0,
+            "start": "2026-04-10T19:24:06.117022",
+            "end": "2026-04-11T01:24:06.117022",
+            "notes": "Risk: Pest Probability | Severity: 0.50 | Confidence: 0.90"
+          }
+        ],
+        "total_cost_inr": 300.0,
+        "total_water_liters": 0.0,
+        "expected_risk_reduction": 0.2,
+        "status": "Optimal",
+        "warnings": [],
+        "generated_at": "2026-04-10T19:24:06.154436"
+      },
+      "actions": {}
+    },
+    "insight": "Based on the current run, here are some analysis and suggestions:\n\n**Improvement Suggestions**\n\n1. **Risk-Avoidance Strategy**: The risk-avoidance strategy is optimal in this run, but consider diversifying by incorporating other strategies (e.g., risk-taking or neutral) to adapt to changing conditions.\n2. **Action Prioritization**: With only one action planned for the first day, prioritize actions based on their expected impact and cost-effectiveness.\n\n**Mistakes to Avoid**\n\n1. **Overreliance on Scouting**: While scouting is important, avoid overinvesting in it, as it may not always yield optimal results.\n2. **Inadequate Planning**: Ensure that the plan takes into account multiple scenarios and contingencies to improve adaptability.\n\n**Optimization Ideas**\n\n1. **Dynamic Risk Assessment**: Consider updating risk assessments dynamically based on new data or changing conditions to optimize decisions.\n2. **Action Scheduling**: Optimize action scheduling by considering the optimal timing of actions based on their impact, cost, and interdependencies.\n\nThese suggestions are designed to be concise and actionable, focusing on the key insights from this specific run."
+  },
+  {
+    "timestamp": "2026-04-10T19:39:51.795927",
+    "run": {
+      "strategy": "low_cost",
+      "budget": 5000,
+      "water": 20,
+      "risk_score": 2,
+      "plan": {
+        "field_id": "field_1",
+        "actions": [
+          {
+            "type": "scouting",
+            "cost_inr": 300.0,
+            "water_liters": 0.0,
+            "start": "2026-04-10T19:39:35.313881",
+            "end": "2026-04-11T01:39:35.313881",
+            "notes": "Risk: Pest Probability | Severity: 0.50 | Confidence: 0.90"
+          }
+        ],
+        "total_cost_inr": 300.0,
+        "total_water_liters": 0.0,
+        "expected_risk_reduction": 0.2,
+        "status": "Optimal",
+        "warnings": [],
+        "generated_at": "2026-04-10T19:39:35.337631"
+      },
+      "actions": {}
+    },
+    "insight": "Based on the current run, here are some analysis and suggestions:\n\n**Improvement Suggestions**\n\n1. **Budget Allocation**: With a budget of 5000 INR, consider allocating funds more efficiently by prioritizing actions with high expected impact and cost-effectiveness.\n2. **Action Diversification**: To reduce risk, incorporate multiple action types (e.g., scouting, planting) to adapt to changing conditions.\n\n**Mistakes to Avoid**\n\n1. **Overinvestment in Scouting**: While scouting is important, avoid overinvesting in it, as it may not always yield optimal results.\n2. **Inadequate Risk Assessment**: Ensure that the risk score is regularly updated based on new data or changing conditions to optimize decisions.\n\n**Optimization Ideas**\n\n1. **Action Scheduling**: Optimize action scheduling by considering the optimal timing of actions based on their impact, cost, and interdependencies.\n2. **Resource Optimization**: Maximize resource utilization (water and budget) by optimizing action sequences and minimizing idle time between actions.\n\nThese suggestions are designed to be concise and actionable, focusing on key insights from this specific run."
+  },
+  {
+    "timestamp": "2026-04-11T11:45:07.508314",
+    "run": {
+      "strategy": "optimize",
+      "budget": 3000,
+      "water": 12000,
+      "risk_score": 2,
+      "plan": {
+        "field_id": "field_1",
+        "actions": [
+          {
+            "type": "scouting",
+            "cost_inr": 300.0,
+            "water_liters": 0.0,
+            "start": "2026-04-11T11:44:52.588718",
+            "end": "2026-04-11T17:44:52.588718",
+            "notes": "Risk: Pest Probability | Severity: 0.50 | Confidence: 0.90"
+          }
+        ],
+        "total_cost_inr": 300.0,
+        "total_water_liters": 0.0,
+        "expected_risk_reduction": 0.2,
+        "status": "Optimal",
+        "warnings": [],
+        "generated_at": "2026-04-11T11:44:52.767326"
+      },
+      "actions": {}
+    },
+    "insight": "Based on the past runs, here are some insights:\n\n**Improvement Suggestions**\n\n1. **Diversify Strategies**: While optimizing is a good strategy, consider incorporating other strategies (e.g., risk-avoidance or low-cost) to adapt to changing conditions.\n2. **Action Prioritization**: With only one action planned for the first day, prioritize actions based on their expected impact and cost-effectiveness.\n\n**Mistakes to Avoid**\n\n1. **Overreliance on Scouting**: While scouting is important, avoid overinvesting in it, as it may not always yield optimal results.\n2. **Inadequate Risk Assessment**: Ensure that the risk score is regularly updated based on new data or changing conditions to optimize decisions.\n\n**Optimization Ideas**\n\n1. **Action Scheduling**: Optimize action scheduling by considering the optimal timing of actions based on their impact, cost, and interdependencies.\n2. **Resource Optimization**: Maximize resource utilization (water and budget) by optimizing action sequences and minimizing idle time between actions.\n\nThese suggestions are designed to be concise and actionable, focusing on key insights from the past runs."
+  },
+  {
+    "timestamp": "2026-04-11T11:47:23.489505",
+    "run": {
+      "strategy": "optimize",
+      "budget": 8000,
+      "water": 500,
+      "risk_score": 2,
+      "plan": {
+        "field_id": "field_1",
+        "actions": [
+          {
+            "type": "scouting",
+            "cost_inr": 300.0,
+            "water_liters": 0.0,
+            "start": "2026-04-11T11:47:10.021760",
+            "end": "2026-04-11T17:47:10.021760",
+            "notes": "Risk: Pest Probability | Severity: 0.50 | Confidence: 0.90"
+          }
+        ],
+        "total_cost_inr": 300.0,
+        "total_water_liters": 0.0,
+        "expected_risk_reduction": 0.2,
+        "status": "Optimal",
+        "warnings": [],
+        "generated_at": "2026-04-11T11:47:10.056456"
+      },
+      "actions": {}
+    },
+    "insight": "Based on the past runs and current run, here are some insights:\n\n**Improvement Suggestions**\n\n1. **Diversify Strategies**: Consider incorporating other strategies (e.g., risk-avoidance or low-cost) to adapt to changing conditions.\n2. **Action Prioritization**: Prioritize actions based on their expected impact and cost-effectiveness.\n\n**Mistakes to Avoid**\n\n1. **Overreliance on Scouting**: Avoid overinvesting in scouting, as it may not always yield optimal results.\n2. **Inadequate Risk Assessment**: Ensure that the risk score is regularly updated based on new data or changing conditions to optimize decisions.\n\n**Optimization Ideas**\n\n1. **Action Scheduling**: Optimize action scheduling by considering the optimal timing of actions based on their impact, cost, and interdependencies.\n2. **Resource Optimization**: Maximize resource utilization (water and budget) by optimizing action sequences and minimizing idle time between actions.\n\nThese suggestions are designed to be concise and actionable, focusing on key insights from the past runs and current run."
+  },
+  {
+    "timestamp": "2026-04-11T12:10:02.710514",
+    "run": {
+      "strategy": "optimize",
+      "budget": 8000,
+      "water": 2000,
+      "risk_score": 2,
+      "plan": {
+        "field_id": "field_1",
+        "actions": [
+          {
+            "type": "scouting",
+            "cost_inr": 300.0,
+            "water_liters": 0.0,
+            "start": "2026-04-11T12:09:52.721766",
+            "end": "2026-04-11T18:09:52.721766",
+            "notes": "Risk: Pest Probability | Severity: 0.50 | Confidence: 0.90"
+          }
+        ],
+        "total_cost_inr": 300.0,
+        "total_water_liters": 0.0,
+        "expected_risk_reduction": 0.2,
+        "status": "Optimal",
+        "warnings": [],
+        "generated_at": "2026-04-11T12:09:53.635447"
+      },
+      "actions": {}
+    },
+    "insight": "Based on the past runs and current run, here are some insights:\n\n**Improvement Suggestions**\n\n1. **Diversify Strategies**: Consider incorporating other strategies (e.g., risk-avoidance or low-cost) to adapt to changing conditions.\n2. **Action Prioritization**: Prioritize actions based on their expected impact and cost-effectiveness.\n\n**Mistakes to Avoid**\n\n1. **Overreliance on Scouting**: Avoid overinvesting in scouting, as it may not always yield optimal results.\n2. **Inadequate Risk Assessment**: Ensure that the risk score is regularly updated based on new data or changing conditions to optimize decisions.\n\n**Optimization Ideas**\n\n1. **Action Scheduling**: Optimize action scheduling by considering the optimal timing of actions based on their impact, cost, and interdependencies.\n2. **Resource Optimization**: Maximize resource utilization (water and budget) by optimizing action sequences and minimizing idle time between actions.\n\nThese suggestions are designed to be concise and actionable, focusing on key insights from the past runs and current run."
+  },
+  {
+    "timestamp": "2026-04-11T12:22:07.121352",
+    "run": {
+      "strategy": "optimize",
+      "budget": 3000,
+      "water": 500,
+      "risk_score": 2,
+      "plan": {
+        "field_id": "field_1",
+        "actions": [
+          {
+            "type": "scouting",
+            "cost_inr": 300.0,
+            "water_liters": 0.0,
+            "start": "2026-04-11T12:21:58.465347",
+            "end": "2026-04-11T18:21:58.465347",
+            "notes": "Risk: Pest Probability | Severity: 0.50 | Confidence: 0.90"
+          }
+        ],
+        "total_cost_inr": 300.0,
+        "total_water_liters": 0.0,
+        "expected_risk_reduction": 0.2,
+        "status": "Optimal",
+        "warnings": [],
+        "generated_at": "2026-04-11T12:21:58.493268"
+      },
+      "actions": {}
+    },
+    "insight": "Based on the past runs, here are some insights:\n\n**Improvement Suggestions**\n\n1. **Diversify Strategies**: Consider incorporating other strategies (e.g., risk-avoidance or low-cost) to adapt to changing conditions.\n2. **Action Prioritization**: Prioritize actions based on their expected impact and cost-effectiveness.\n\n**Mistakes to Avoid**\n\n1. **Overreliance on Scouting**: Avoid overinvesting in scouting, as it may not always yield optimal results.\n2. **Inadequate Risk Assessment**: Ensure that the risk score is regularly updated based on new data or changing conditions to optimize decisions.\n\n**Optimization Ideas**\n\n1. **Action Scheduling**: Optimize action scheduling by considering the optimal timing of actions based on their impact, cost, and interdependencies.\n2. **Resource Optimization**: Maximize resource utilization (water and budget) by optimizing action sequences and minimizing idle time between actions.\n\nThese suggestions are designed to be concise and actionable, focusing on key insights from past runs."
+  },
+  {
+    "timestamp": "2026-04-11T12:53:39.967740",
+    "run": {
+      "strategy": "optimize",
+      "budget": 10000,
+      "water": 5000,
+      "risk_score": 8,
+      "plan": {
+        "field_id": "field_1",
+        "actions": [
+          {
+            "type": "scouting",
+            "cost_inr": 300.0,
+            "water_liters": 0.0,
+            "start": "2026-04-11T12:53:25.679274",
+            "end": "2026-04-11T18:53:25.679274",
+            "notes": "Risk: Environmental Anomaly | Severity: 1.00 | Confidence: 0.90"
+          }
+        ],
+        "total_cost_inr": 300.0,
+        "total_water_liters": 0.0,
+        "expected_risk_reduction": 0.4,
+        "status": "Optimal",
+        "warnings": [],
+        "generated_at": "2026-04-11T12:53:25.719521"
+      },
+      "actions": {}
+    },
+    "insight": "Based on the past runs and current run, here are some insights:\n\n**Improvement Suggestions**\n\n1. **Diversify Strategies**: Consider incorporating other strategies (e.g., risk-avoidance or low-cost) to adapt to changing conditions.\n2. **Action Prioritization**: Prioritize actions based on their expected impact and cost-effectiveness.\n\n**Mistakes to Avoid**\n\n1. **Overreliance on Scouting**: Avoid overinvesting in scouting, as it may not always yield optimal results.\n2. **Inadequate Risk Assessment**: Ensure that the risk score is regularly updated based on new data or changing conditions to optimize decisions.\n\n**Optimization Ideas**\n\n1. **Action Scheduling**: Optimize action scheduling by considering the optimal timing of actions based on their impact, cost, and interdependencies.\n2. **Resource Optimization**: Maximize resource utilization (water and budget) by optimizing action sequences and minimizing idle time between actions.\n\nThese suggestions are designed to be concise and actionable, focusing on key insights from past runs and current run."
+  },
+  {
+    "timestamp": "2026-04-11T13:02:10.927714",
+    "run": {
+      "strategy": "OPTIMIZE",
+      "budget": 1000,
+      "water": 500,
+      "risk_score": 2,
+      "plan": {
+        "field_id": "field_1",
+        "actions": [
+          {
+            "type": "scouting",
+            "cost_inr": 300.0,
+            "water_liters": 0.0,
+            "start": "2026-04-11T13:01:55.140232",
+            "end": "2026-04-11T19:01:55.140232",
+            "notes": "Risk: Pest Probability | Severity: 0.50 | Confidence: 0.90"
+          }
+        ],
+        "total_cost_inr": 300.0,
+        "total_water_liters": 0.0,
+        "expected_risk_reduction": 0.2,
+        "status": "Optimal",
+        "warnings": [],
+        "generated_at": "2026-04-11T13:01:55.183657"
+      },
+      "actions": {}
+    },
+    "insight": "Based on the past runs and current run, here are some insights:\n\n**Improvement Suggestions**\n\n1. **Diversify Strategies**: Consider incorporating other strategies (e.g., risk-avoidance or low-cost) to adapt to changing conditions.\n2. **Action Prioritization**: Prioritize actions based on their expected impact and cost-effectiveness.\n\n**Mistakes to Avoid**\n\n1. **Overreliance on Scouting**: Avoid overinvesting in scouting, as it may not always yield optimal results.\n2. **Inadequate Risk Assessment**: Ensure that the risk score is regularly updated based on new data or changing conditions to optimize decisions.\n\n**Optimization Ideas**\n\n1. **Action Scheduling**: Optimize action scheduling by considering the optimal timing of actions based on their impact, cost, and interdependencies.\n2. **Resource Optimization**: Maximize resource utilization (water and budget) by optimizing action sequences and minimizing idle time between actions.\n\nThese suggestions are designed to be concise and actionable, focusing on key insights from past runs and current run."
+  },
+  {
+    "timestamp": "2026-04-11T13:16:01.877791",
+    "run": {
+      "strategy": "balanced",
+      "budget": 5000,
+      "water": 20,
+      "risk_score": 2,
+      "plan": {
+        "field_id": "field_1",
+        "actions": [
+          {
+            "type": "scouting",
+            "cost_inr": 300.0,
+            "water_liters": 0.0,
+            "start": "2026-04-11T13:15:45.926117",
+            "end": "2026-04-11T19:15:45.926117",
+            "notes": "Risk: Pest Probability | Severity: 0.50 | Confidence: 0.90"
+          }
+        ],
+        "total_cost_inr": 300.0,
+        "total_water_liters": 0.0,
+        "expected_risk_reduction": 0.2,
+        "status": "Optimal",
+        "warnings": [],
+        "generated_at": "2026-04-11T13:15:45.975445"
+      },
+      "actions": {}
+    },
+    "insight": "Based on the past runs, here are some insights:\n\n**Improvement Suggestions**\n\n1. **Diversify Strategies**: Consider incorporating other strategies (e.g., risk-avoidance or low-cost) to adapt to changing conditions.\n2. **Action Prioritization**: Prioritize actions based on their expected impact and cost-effectiveness.\n\n**Mistakes to Avoid**\n\n1. **Overreliance on Scouting**: Avoid overinvesting in scouting, as it may not always yield optimal results.\n2. **Inadequate Risk Assessment**: Ensure that the risk score is regularly updated based on new data or changing conditions to optimize decisions.\n\n**Optimization Ideas**\n\n1. **Action Scheduling**: Optimize action scheduling by considering the optimal timing of actions based on their impact, cost, and interdependencies.\n2. **Resource Optimization**: Maximize resource utilization (water and budget) by optimizing action sequences and minimizing idle time between actions.\n\nThese suggestions are designed to be concise and actionable, focusing on key insights from past runs."
+  },
+  {
+    "timestamp": "2026-04-11T13:20:31.642581",
+    "run": {
+      "strategy": "balanced",
+      "budget": 3000,
+      "water": 500,
+      "risk_score": 2,
+      "plan": {
+        "field_id": "field_1",
+        "actions": [
+          {
+            "type": "scouting",
+            "cost_inr": 300.0,
+            "water_liters": 0.0,
+            "start": "2026-04-11T13:20:20.881861",
+            "end": "2026-04-11T19:20:20.881861",
+            "notes": "Risk: Pest Probability | Severity: 0.50 | Confidence: 0.90"
+          }
+        ],
+        "total_cost_inr": 300.0,
+        "total_water_liters": 0.0,
+        "expected_risk_reduction": 0.2,
+        "status": "Optimal",
+        "warnings": [],
+        "generated_at": "2026-04-11T13:20:20.908891"
+      },
+      "actions": {}
+    },
+    "insight": "Learning unavailable (LLM failed)"
+  },
+  {
+    "timestamp": "2026-04-11T13:23:46.729211",
+    "run": {
+      "strategy": "optimize",
+      "budget": 5000,
+      "water": 300,
+      "risk_score": 2,
+      "plan": {
+        "field_id": "field_1",
+        "actions": [
+          {
+            "type": "scouting",
+            "cost_inr": 300.0,
+            "water_liters": 0.0,
+            "start": "2026-04-11T13:23:29.044860",
+            "end": "2026-04-11T19:23:29.044860",
+            "notes": "Risk: Pest Probability | Severity: 0.50 | Confidence: 0.90"
+          }
+        ],
+        "total_cost_inr": 300.0,
+        "total_water_liters": 0.0,
+        "expected_risk_reduction": 0.2,
+        "status": "Optimal",
+        "warnings": [],
+        "generated_at": "2026-04-11T13:23:29.066382"
+      },
+      "actions": {}
+    },
+    "insight": "Based on the past runs, here are some insights:\n\n**Improvement Suggestions**\n\n1. **Diversify Strategies**: Consider incorporating other strategies (e.g., risk-avoidance or low-cost) to adapt to changing conditions.\n2. **Action Prioritization**: Prioritize actions based on their expected impact and cost-effectiveness.\n\n**Mistakes to Avoid**\n\n1. **Overreliance on Scouting**: Avoid overinvesting in scouting, as it may not always yield optimal results.\n2. **Inadequate Risk Assessment**: Ensure that the risk score is regularly updated based on new data or changing conditions to optimize decisions.\n\n**Optimization Ideas**\n\n1. **Action Scheduling**: Optimize action scheduling by considering the optimal timing of actions based on their impact, cost, and interdependencies.\n2. **Resource Optimization**: Maximize resource utilization (water and budget) by optimizing action sequences and minimizing idle time between actions.\n\nThese suggestions are designed to be concise and actionable, focusing on key insights from past runs."
+  },
+  {
+    "timestamp": "2026-04-11T13:27:47.423549",
+    "run": {
+      "strategy": "optimize",
+      "budget": 5000,
+      "water": 80,
+      "risk_score": 2,
+      "plan": {
+        "field_id": "field_1",
+        "actions": [
+          {
+            "type": "scouting",
+            "cost_inr": 300.0,
+            "water_liters": 0.0,
+            "start": "2026-04-11T13:27:32.851360",
+            "end": "2026-04-11T19:27:32.851360",
+            "notes": "Risk: Pest Probability | Severity: 0.50 | Confidence: 0.90"
+          }
+        ],
+        "total_cost_inr": 300.0,
+        "total_water_liters": 0.0,
+        "expected_risk_reduction": 0.2,
+        "status": "Optimal",
+        "warnings": [],
+        "generated_at": "2026-04-11T13:27:32.877665"
+      },
+      "actions": {}
+    },
+    "insight": "Based on the past runs, here are some insights:\n\n**Improvement Suggestions**\n\n1. **Action Prioritization**: Prioritize actions based on their expected impact and cost-effectiveness.\n2. **Resource Optimization**: Maximize resource utilization (water and budget) by optimizing action sequences and minimizing idle time between actions.\n\n**Mistakes to Avoid**\n\n1. **Overreliance on Scouting**: Avoid overinvesting in scouting, as it may not always yield optimal results.\n2. **Inadequate Risk Assessment**: Ensure that the risk score is regularly updated based on new data or changing conditions to optimize decisions.\n\n**Optimization Ideas**\n\n1. **Action Scheduling**: Optimize action scheduling by considering the optimal timing of actions based on their impact, cost, and interdependencies.\n2. **Diversify Strategies**: Consider incorporating other strategies (e.g., risk-avoidance or low-cost) to adapt to changing conditions.\n\nThese suggestions are designed to be concise and actionable, focusing on key insights from past runs."
+  },
+  {
+    "timestamp": "2026-04-11T13:48:01.382952",
+    "run": {
+      "strategy": "optimize",
+      "budget": 10000,
+      "water": 10000,
+      "risk_score": 8,
+      "plan": {
+        "field_id": "field_1",
+        "actions": [
+          {
+            "type": "scouting",
+            "cost_inr": 300.0,
+            "water_liters": 0.0,
+            "start": "2026-04-11T13:47:57.271209",
+            "end": "2026-04-11T19:47:57.271209",
+            "notes": "Risk: Environmental Anomaly | Severity: 1.00 | Confidence: 0.90"
+          }
+        ],
+        "total_cost_inr": 300.0,
+        "total_water_liters": 0.0,
+        "expected_risk_reduction": 0.4,
+        "status": "Optimal",
+        "warnings": [],
+        "generated_at": "2026-04-11T13:47:57.305037"
+      },
+      "actions": {}
+    },
+    "insight": "Learning unavailable (LLM failed)"
+  },
+  {
+    "timestamp": "2026-04-11T13:58:28.630549",
+    "run": {
+      "strategy": "optimize",
+      "budget": 5000,
+      "water": 1000,
+      "risk_score": 2,
+      "plan": {
+        "field_id": "field_1",
+        "actions": [
+          {
+            "type": "scouting",
+            "cost_inr": 300.0,
+            "water_liters": 0.0,
+            "start": "2026-04-11T13:58:12.983378",
+            "end": "2026-04-11T19:58:12.983378",
+            "notes": "Risk: Pest Probability | Severity: 0.50 | Confidence: 0.90"
+          }
+        ],
+        "total_cost_inr": 300.0,
+        "total_water_liters": 0.0,
+        "expected_risk_reduction": 0.2,
+        "status": "Optimal",
+        "warnings": [],
+        "generated_at": "2026-04-11T13:58:13.012375"
+      },
+      "actions": {}
+    },
+    "insight": "Based on the past runs, here are some insights:\n\n**Improvement Suggestions**\n\n1. **Action Prioritization**: Prioritize actions based on their expected impact and cost-effectiveness.\n2. **Resource Optimization**: Maximize resource utilization (water and budget) by optimizing action sequences and minimizing idle time between actions.\n\n**Mistakes to Avoid**\n\n1. **Overreliance on Scouting**: Avoid overinvesting in scouting, as it may not always yield optimal results.\n2. **Inadequate Risk Assessment**: Ensure that the risk score is regularly updated based on new data or changing conditions to optimize decisions.\n\n**Optimization Ideas**\n\n1. **Action Scheduling**: Optimize action scheduling by considering the optimal timing of actions based on their impact, cost, and interdependencies.\n2. **Diversify Strategies**: Consider incorporating other strategies (e.g., risk-avoidance or low-cost) to adapt to changing conditions.\n\nThese suggestions are designed to be concise and actionable, focusing on key insights from past runs."
+  },
+  {
+    "timestamp": "2026-04-19T09:54:42.534646",
+    "run": {
+      "strategy": "optimize",
+      "budget": 10000,
+      "water": 10000,
+      "risk_score": 8,
+      "plan": {
+        "field_id": "field_1",
+        "actions": [
+          {
+            "type": "scouting",
+            "cost_inr": 300.0,
+            "water_liters": 0.0,
+            "start": "2026-04-19T09:54:42.317366",
+            "end": "2026-04-19T15:54:42.317373",
+            "notes": "Risk: Environmental Anomaly | Severity: 1.00 | Confidence: 0.90"
+          }
+        ],
+        "total_cost_inr": 300.0,
+        "total_water_liters": 0.0,
+        "expected_risk_reduction": 0.4,
+        "status": "Optimal",
+        "warnings": [],
+        "generated_at": "2026-04-19T09:54:42.514901"
+      },
+      "actions": {}
+    },
+    "insight": "Learning unavailable (LLM failed)"
+  }
+]
